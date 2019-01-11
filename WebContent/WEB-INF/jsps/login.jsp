@@ -10,7 +10,11 @@
 </head>
 <body>
 <h1>天天记账</h1>
-<a href="<c:url value="/login" />" >登入</a> ||
-<a href="<c:url value="/register" />" >注册</a> <br/>
+<sf:form commandName="user">
+	登入名：<sf:input path="loginName"/><sf:errors path="loginName" /><br/>
+	密   码：<sf:password path="passWord"/><sf:errors path="passWord" /><br/>
+	<%-- <sf:errors path="errormessage" /><br/> --%>
+	<input type="submit" value="登入">
+</sf:form>
 </body>
 </html>

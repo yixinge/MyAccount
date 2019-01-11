@@ -11,7 +11,7 @@ public class UserInfo implements Serializable{
 	private Integer id;
 	private Integer userId;
 	private String userName;
-	private String profile_picture;
+	private String profilePicture;
 	private String gender;
 	private Integer age;
 	private String tel;
@@ -36,10 +36,10 @@ public class UserInfo implements Serializable{
 		this.userName = userName;
 	}
 	public String getProfile_picture() {
-		return profile_picture;
+		return profilePicture;
 	}
 	public void setProfile_picture(String profile_picture) {
-		this.profile_picture = profile_picture;
+		this.profilePicture = profile_picture;
 	}
 	public String getGender() {
 		return gender;

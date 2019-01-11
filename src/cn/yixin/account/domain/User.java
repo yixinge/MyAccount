@@ -2,14 +2,23 @@ package cn.yixin.account.domain;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class User implements Serializable{
 	private static final long serialVersionUID = -1996633962116187335L;
 	
 	public static final String TABLE_NAME        =         "user";
 	
 	private Integer id;
+	@NotNull
+	@Size(min=3,max=9,message="{loginName.size}")
 	private String loginName;
+	@NotNull
+	@Size(min=3,max=15,message="{password.size}")
 	private String passWord;
+	@NotNull
+	@Size(min=3,max=9,message="{username.size}")
 	private String userName;
 	private String userIdentity;
 	private Integer userStatus;

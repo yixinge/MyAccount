@@ -10,13 +10,13 @@ public class MainMessage implements Serializable{
 	public static final String TABLE_NAME      = "main_message";
 	
 	private Integer id;
-	private Integer user_id;
-	private Integer count_id;
+	private Integer userId;
+	private Integer countId;
 	private String type;
 	private String description;
 	private Double pay;
-	private Date pay_time;
-	private String goods_picture;
+	private Date payTime;
+	private String goodsPicture;
 	private Integer status;
 	
 	public Integer getId() {
@@ -26,16 +26,10 @@ public class MainMessage implements Serializable{
 		this.id = id;
 	}
 	public Integer getUser_id() {
-		return user_id;
+		return userId;
 	}
 	public void setUser_id(Integer user_id) {
-		this.user_id = user_id;
-	}
-	public Integer getCount_id() {
-		return count_id;
-	}
-	public void setCount_id(Integer count_id) {
-		this.count_id = count_id;
+		this.userId = user_id;
 	}
 	public String getType() {
 		return type;
@@ -55,17 +49,29 @@ public class MainMessage implements Serializable{
 	public void setPay(Double pay) {
 		this.pay = pay;
 	}
-	public Date getPay_time() {
-		return pay_time;
+	public Integer getUserId() {
+		return userId;
 	}
-	public void setPay_time(Date pay_time) {
-		this.pay_time = pay_time;
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
+	public Integer getCountId() {
+		return countId;
+	}
+	public void setCountId(Integer countId) {
+		this.countId = countId;
+	}
+	public Date getPayTime() {
+		return payTime;
+	}
+	public void setPayTime(Date payTime) {
+		this.payTime = payTime;
 	}
 	public String getGoods_picture() {
-		return goods_picture;
+		return goodsPicture;
 	}
 	public void setGoods_picture(String goods_picture) {
-		this.goods_picture = goods_picture;
+		this.goodsPicture = goods_picture;
 	}
 	public Integer getStatus() {
 		return status;

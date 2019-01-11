@@ -10,7 +10,5 @@
 </head>
 <body>
 <h1>天天记账</h1>
-<a href="<c:url value="/login" />" >登入</a> ||
-<a href="<c:url value="/register" />" >注册</a> <br/>
 </body>
 </html>

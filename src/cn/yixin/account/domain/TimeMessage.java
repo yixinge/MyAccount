@@ -9,7 +9,7 @@ public class TimeMessage implements Serializable{
 	public static final String   TABLE_NAME    = "time_message";
 	
 	private Integer id;
-	private Integer main_message_id;
+	private Integer mainMessageId;
 	private Integer year;
 	private Integer month;
 	private Integer week;
@@ -25,10 +25,10 @@ public class TimeMessage implements Serializable{
 		this.id = id;
 	}
 	public Integer getMain_message_id() {
-		return main_message_id;
+		return mainMessageId;
 	}
 	public void setMain_message_id(Integer main_message_id) {
-		this.main_message_id = main_message_id;
+		this.mainMessageId = main_message_id;
 	}
 	public Integer getYear() {
 		return year;

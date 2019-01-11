@@ -32,7 +32,7 @@ public class RootConfig {
 //		dSource.setDriverClass(driverClass);
 		BasicDataSource ds = new BasicDataSource();
 		ds.setDriverClassName("com.mysql.jdbc.Driver");
-		ds.setUrl("jdbc:mysql://127.0.0.1:3306/my_account?useUnicode=true&characterEncoding=UTF-8");
+		ds.setUrl("jdbc:mysql://127.0.0.1:3306/my_accoumt?useUnicode=true&characterEncoding=UTF-8");
 		ds.setUsername("root");
 		ds.setPassword("123456");
 		ds.setInitialSize(2);
